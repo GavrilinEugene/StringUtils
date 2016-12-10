@@ -18,9 +18,9 @@ public final class StringUtils {
         String[] words = text.toLowerCase().split("\\s+|\\s*,\\s*|\\s*\\.\\s*");
         Map<String, Integer> wordCount = new HashMap<>();
 
-        for(String word: words) {
+        for (String word : words) {
             Integer count = wordCount.get(word);
-            wordCount.put(word, (count==null) ? 1 : count+1);
+            wordCount.put(word, (count == null) ? 1 : count + 1);
         }
         return wordCount;
     }
